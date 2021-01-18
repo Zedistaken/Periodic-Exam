@@ -14,6 +14,51 @@
 
   </p>
 
+  <ion-item>
+    <ion-label>Height in: </ion-label>
+
+  </ion-item>
+
+  <ion-item>
+     <ion-label>Feet</ion-label>
+    <ion-input  type="number" [(ngModel)]="feet"></ion-input>
+    </ion-item>
+  <ion-item>
+    <ion-label>Inches</ion-label>
+    <ion-input type="number" [(ngModel)]="inches"></ion-input>
+    </ion-item>
+  <ion-item>
+    <ion-label color="dark"> Gender: </ion-label>
+    <ion-select interface="popover" [(ngModel)]="gender">
+      <ion-option value="m">Male</ion-option>
+      <ion-option value="f">Female</ion-option>
+      </ion-select>
+    </ion-item>
+  <button ion-button color="secondary" (click)="computeIW()">
+    Compute
+  </button>
+
+  <ion-item *ngIf="m">
+    <h2>Your ideal weight is: </h2>
+    <h2>Robinson: {{robinsonM}}</h2>
+    <h2>Miller: {{millerM}}</h2>
+    <h2>Hamwi: {{hamwiM}}</h2>
+    <h2>Devine: {{devineM}}</h2>
+  </ion-item>
+
+  <ion-item *ngIf="f">
+    <h2>Your ideal weight is: </h2>
+    <h2>Robinson: {{robinsonF}}</h2>
+    <h2>Miller: {{millerF}}</h2>
+    <h2>Hamwi: {{hamwiF}}</h2>
+    <h2>Devine: {{devineF}}</h2>
+  </ion-item>
+
+
+
+
+  
+
 
 
 </ion-content>
