@@ -1,0 +1,17 @@
+ion-content{
+ background: linear-gradient(to right, #2193b0, #6dd5ed); 
+}
+h2 {
+  text-align: center;
+  color: #ffffff;
+}
+
+p {
+  text-align: justify;
+  font-family: "Yu Mincho", sans-serif;
+  color: #ffffff;
+}
+
+ion-item {
+  background: #ffffff;
+}
